@@ -57,10 +57,10 @@
             padding: 2px 0; /* Adds a little padding to each list item for visual comfort */
         }
         .right-column {
-            width: 65%;
+            width: 55%;
         }
         .profile-pic {
-            max-width: 250px; /* Adjust based on actual image size */
+            max-width: 200px; /* Adjust based on actual image size */
             border-radius: 5px;
             display: block;
             margin: 0 auto; 
@@ -89,6 +89,15 @@
             display: flex;
             justify-content: center; /* This will center the footer content horizontally */
             align-items: center; /* This will center the footer content vertically */
+        }
+        @media screen and (max-width: 1268px) {
+            .left-column, .right-column {
+                float: none;
+                width: auto;
+            }
+            .navbar a {
+                display: block;
+            }
         }
     </style>
 </head>
